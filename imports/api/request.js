@@ -21,26 +21,36 @@ var schemas = new SimpleSchema({
         label: "Jenis Usaha",
         optional: true
     },
+    address: {
+        type: String,
+        label: "Alamat",
+    },
+    rayon: {
+        type: String,
+        label: "Rayon",
+    },
     rate: {
         type: Number,
         label: "Tarif",
     },
     power: {
-        type: String,
+        type: Number,
         label: "Daya",
     },
     powerNew: {
-        type: String,
+        type: Number,
         label: "Daya Baru",
         optional: true
     },
     paymentDate: {
         type: Date,
         label: "Tanggal Bayar",
+        optional: true
     },
     finishedPlanDate: {
         type: Date,
         label: "Tanggal Rencana Nyala",
+        optional: true
     },
     vendor: {
         type: String,
@@ -54,6 +64,11 @@ var schemas = new SimpleSchema({
     tmpCountdown: {
         type: String,
         label: "TMP COUNTDOWN",
+        optional: true
+    },
+    description: {
+        type: String,
+        label: "Keterangan",
         optional: true
     },
     status: {
