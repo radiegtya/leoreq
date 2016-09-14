@@ -30,7 +30,7 @@ var schemas = new SimpleSchema({
         label: "Rayon",
     },
     rate: {
-        type: Number,
+        type: String,
         label: "Tarif",
     },
     power: {
